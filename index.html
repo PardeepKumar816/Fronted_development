@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardeep's Gym</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            font-family: 'Hubballi', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/img.jpg');
+            color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 18px;
+
+        }
+
+        .left img {
+            width: 54%;
+            /* text-align: center; */
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .left div {
+            font-weight: bolder;
+            font-size: 19px;
+            text-align: center;
+            line-height: 0px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            margin: 18px auto;
+            width: 36%;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 18px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 23px;
+            font-size: 16px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            background-color: transparent;
+            color: black;
+            padding: 4px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: aquamarine;
+            font-family: 'Hubballi', cursive;
+        }
+
+        .container {
+            border: 2px solid black;
+            display: block;
+            margin: 69px 57px;
+            padding: 24px 0px;
+            border-radius: 10px;
+            width: 39%;
+        }
+
+        .form-group input {
+            display: block;
+            width: 50%;
+            margin: 6px auto;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 17px;
+            background-color: black;
+            background: balck;
+        }
+
+        .form-group input::placeholder{
+            color: white;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 50%;
+            margin: 13px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="assets/logo.png" alt="">
+            <div>Pardeep's Gym</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Hyderabad now</h1>
+        <form action="">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
