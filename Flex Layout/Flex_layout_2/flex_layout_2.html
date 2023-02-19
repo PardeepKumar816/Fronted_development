@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid black;
+            width: 40%;
+            height: 70%;
+        }
+
+        .header {
+            border-bottom: 3px solid black;
+        }
+
+        .header div {
+            padding: 4px;
+        }
+
+        .body {
+          
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .row-1 {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            margin: 16px;
+            
+        }
+
+        .small-box {
+            background-color: palevioletred;
+            border: 3px solid black;
+            flex: 0.5;
+            margin-right: 16px;
+        }
+
+        .large-box {
+            background-color: blue;
+            border: 3px solid black;
+            flex:1;
+            margin-left: 16px;
+        }
+
+        .largest-box {
+            flex: 1;
+            background-color: yellow;
+            border: 3px solid black;
+            margin: 16px;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <div>Mock 1</div>
+            </div>
+            <div class="body">
+                <div class="row-1">
+                    <div class="small-box"></div>
+                    <div class="large-box"></div>
+                </div>
+                <div class="row-1">
+                    <div class="small-box"></div>
+                    <div class="large-box"></div>
+                </div>
+                <div class="row-1">
+                    <div class="small-box"></div>
+                    <div class="large-box"></div>
+                </div>
+                <div class="largest-box">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
