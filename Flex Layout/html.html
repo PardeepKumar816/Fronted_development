@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+        }
+
+        .header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header ul li {
+            float: left;
+            padding: 16px;
+        }
+
+        .main-content-container {
+            flex-grow: 1;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left-side {
+            flex-grow: 1;
+            background-color: aqua;
+        }
+
+        .right-side {
+            flex-grow: 4;
+            background-color: antiquewhite;
+        }
+
+        #main-text {
+            padding-left: 32px;
+            padding-top: 32px;
+            font-size: 32px;
+        }
+
+        #text {
+            padding-left: 32px;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Setting
+                </li>
+            </ul>
+        </div>
+        <div class="main-content-container">
+            <div class="left-side">
+                <div id="main-text">
+                    Left Side
+                </div>
+            </div>
+            <div class="right-side">
+                <div>
+                    <div id="main-text">Right Side</div>
+                    <div id="text">
+                        main content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                copyright
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
