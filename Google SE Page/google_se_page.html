@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+.container{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.header{
+    flex-grow: 0;
+}
+
+.header ul{
+    list-style: none;
+}
+
+.header ul li{
+    float: left;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li>Gmail</li>
+                <li>Images</li>
+                <li id="doted-button"></li>
+                <li id="circular-id"></li>
+            </ul>
+        </div>
+        <div class="body">
+            <div id="google-tag">Google</div>
+            <div class="textfield-container">
+                <img src="search_icon.png" width="40px" height="40px">
+                <input type="text" id="textfield">
+                <img src="mic_icon.png" width="40px" height="40px">
+                <img src="camera_icon.png" width="40px" height="40px">
+            </div>
+            <div class="buttons-container">
+                <button type="button">Google Search</button>
+                <button type="button">I'm Feeling Lucky</button>
+            </div>
+            <div class="language-container">
+                <div id="language-text">Google offered in:</div>
+                <button type="button">urdu</button>
+                <button type="button">pesto</button>
+                <button type="button">sindhi</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="upper-row">Pakistan</div>
+            <hr class="line">
+            <ul>
+                <li><button type="button">About</button></li>
+                <li><button type="button">Adertising</button></li>
+                <li><button type="button">Business</button></li>
+                <li><button type="button">How Search works</button></li>
+                <li><button type="button">Privacy</button></li>
+                <li><button type="button">Terms</button></li>
+                <li><button type="button">Settings</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
