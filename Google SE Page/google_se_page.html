@@ -8,30 +8,50 @@
     <title>Document</title>
 
     <style>
-        html, body{
+        html,
+        body {
             height: 100%;
             margin: 0;
             padding: 0;
         }
 
-.container{
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-}
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-.header{
-    flex-grow: 0;
-}
+        .header {
+            flex-grow: 0;
+        }
 
-.header ul{
-    list-style: none;
-}
+        .header ul {
+            list-style: none;
+        }
 
-.header ul li{
-    float: left;
-}
+        .header ul li {
+            float: left;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
 
+
+
+        #doted-button ul li {
+            float: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dot {
+            /* margin: 0px;
+            padding: 0px; */
+            background-color: brown;
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            border-radius: 50%;
+        }
     </style>
 
 </head>
@@ -42,8 +62,23 @@
             <ul>
                 <li>Gmail</li>
                 <li>Images</li>
-                <li id="doted-button"></li>
-                <li id="circular-id"></li>
+                <li id="doted-button">
+                    <ul>
+                        <li><span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li><span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li><span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li id="circular-id">P</li>
             </ul>
         </div>
         <div class="body">
